@@ -52,7 +52,7 @@ def TestPolicy(gamma,p,state,goal,barriers,maxrow,maxcol,beta,expected):
         return "Policy test passed"
     return "Policy test failed"
 
-print(main([(4,4),(2,1),(1,1)],0.9,1,5,5,[],[(1,2),(2,2),(2,3),(3,3),(3,4),(3,4),(3,5)]))
+print(TestPrediction([(1,1),(4,1),(3,1)],0.9,1,5,7,[],[(4,3),(4,2),(4,1),(3,1),(2,1)],0))
 print(TestPrediction([(4,4),(2,1),(1,1)],0.9,1,5,5,[],[(1,2),(2,2),(2,3),(3,3),(3,4),(3,4),(3,5)],0))
 print(TestSingleState())
 print(TestBarriers((1,1),(2,1),4,4,"right"))
